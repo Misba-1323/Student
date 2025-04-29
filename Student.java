@@ -24,5 +24,6 @@ public class Student {
 
     public static void main(String[] args) {
         Student s = new Student("Anah", 201, "BCA","Hubli","9710655223");
+        s.display();
     }
 }
