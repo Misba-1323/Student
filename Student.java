@@ -2,11 +2,15 @@ public class Student {
     String name;
     int id;
     String course;
+    String address;
+    String phno;
 
-    public Student(String name, int id, String course) {
+    public Student(String name, int id, String course,String address, String phno) {
         this.name = name;
         this.id = id;
         this.course = course;
+        this.address=address;
+        this.phno=phno;
     }
     
     public void display(){
@@ -14,9 +18,11 @@ public class Student {
         System.out.println("Name : "+name);
         System.out.println("ID : "+id);
         System.out.println("Course : "+course);
+        System.out.println("Address : "+address);
+        System.out.println("Phone number : "+phno);
     }
 
     public static void main(String[] args) {
-        Student s = new Student("Anah", 201, "BCA");
+        Student s = new Student("Anah", 201, "BCA","Hubli","9710655223");
     }
 }
